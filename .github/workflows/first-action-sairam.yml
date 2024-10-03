@@ -1,0 +1,21 @@
+# Giving the name 
+name: Sairam First Workflow
+
+# On is used to know when this workflow gets executed
+on:  workflow_dispatch
+#workflow_dispatch events helps us in manually trigger this workflow
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs: 
+
+    # Giving job a name
+  first-job-sairam:
+    #runs-on is the ruuner i.e., an OS evironment in which the steps are executed
+    runs-on: ubuntu-latest
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Print Greetings
+        run: echo "Hi Shankramanchi Sairam.Welcome to Honeywell"
+
+      - name: Bye
+        run: echo "Thankyou for joining our project"
