@@ -5,5 +5,5 @@ inputs:
     description: 'The message to log'
     required: true
 runs:
-  using: 'node12'
+  using: 'node-latest'
   main: 'index.js'
