@@ -8,12 +8,3 @@ runs:
   using: 'node12'
   main: 'index.js'
 
-jobs:
-  log:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Log a custom message
-        uses: ./.github/actions/log-message
-        with:
-          message: 'Hello from custom action!'
-
