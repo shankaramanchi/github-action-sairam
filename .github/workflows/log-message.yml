@@ -6,9 +6,6 @@ jobs:
   log:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out code
-        uses: actions/checkout@v2  # Ensure the repository code is checked out first
-
       - name: Log a custom message
         uses: ./.github/actions/log-message  # Reference to your local custom action
         with:
