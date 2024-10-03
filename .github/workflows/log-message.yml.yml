@@ -1,15 +1,15 @@
 name: Log Custom Message
 
-on:  workflow_dispatch
+on: workflow_dispatch
 
 jobs:
   log:
     runs-on: ubuntu-latest
     steps:
       - name: Check out code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2  # Ensure the repository code is checked out first
 
       - name: Log a custom message
-        uses: ./.github/actions/log-message
+        uses: ./.github/actions/log-message  # Reference to your local custom action
         with:
           message: 'Hello from custom action!'
