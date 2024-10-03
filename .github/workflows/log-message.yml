@@ -1,0 +1,18 @@
+name: Log Custom Message
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  log:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Log a custom message
+        uses: ./.github/actions/log-message
+        with:
+          message: 'Hello from custom action!'
