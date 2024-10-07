@@ -1,9 +1,0 @@
-name: 'Log Message'
-description: 'Logs a custom message to the console'
-inputs:
-  message:
-    description: 'The message to log'
-    required: true
-runs:
-  using: 'node16'
-  main: 'index.js'
